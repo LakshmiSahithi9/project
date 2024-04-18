@@ -33,10 +33,10 @@
             width: 100%;
             height: 85vh;
             position: absolute;
-            background-image: url("C:\Users\Lakshmi Sahithi\OneDrive\Desktop\project\assignments\images\IRCTC-Changes-In-Ticket-Booking.jpg");
-            background size= cover;
-            z-index= -1;
-          }
+            background-image: url("background\ image\ 1.jpg");
+            background-position: center;
+            background size: cover;
+            z-index: -1;                  
           .form{
             width:40px;
             top:2rem;
@@ -49,7 +49,6 @@
             justify-content: center;
             text-align: center;
           }
-
     </style>
 </head>
 <body>
@@ -58,17 +57,17 @@
         <img src="./images/secondry-logo.png">
         <img scr="assignments/images/logo.png">
     </div>
+    <div class="container">
     <div class="main">
         <div class="form">
-            <div class="head">
+            <leftdiv class="head">
                 <img src="./images/Screenshot_14-4-2024_155740_www.irctc.co.in.jpeg">
-                <h3>PNR STATUS</h3>
             </div>
-            <div class="head-box">
+            <rightdiv class="head-box">
                 <img src="./images/Screenshot_14-4-2024_155756_www.irctc.co.in.jpeg">
-                <h3><CHARTS/VACANCY</h3>
             </div>
         </div>
+    </div>
         <div class="main">
         <div class="body">
             <div class="text">
@@ -80,8 +79,10 @@
         <i class="fa fa-paper-plane"></i><input type="text" placeholder="From">
       <div class="arrow"> <i class="fa-solid fa-up-long"></i> <i class="fa-solid fa-down-long"></i>
         <i class="fa fa-map-marker"></i><input type="text" placeholder="To">
-        <label for="data">DD/MM/YYYY*</label>
-        <input type="dare" name="" id="">
+        <div class="date-box">
+            <label for="dob" class="dob-head">DD/MM/YYYY</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
         <i class="fa-solid fa-briefcase"></i><select name="classes" id="">
             <option value="All classes">All Classes</option>
             <option value="First classes">AC First Class (1A)</option>
